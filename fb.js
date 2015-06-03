@@ -1,5 +1,7 @@
 var _ = require('lodash-node');
 
+console.time("fb");
+
 var people = [
   {
     "name": "Dave",
@@ -56,3 +58,5 @@ var answer = _.reduce(tallys, function(challenger, champion) {
 });
 
 console.log(answer);
+
+console.timeEnd("fb");
